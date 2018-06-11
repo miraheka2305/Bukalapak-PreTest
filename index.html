@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pre-Test UI Engineer</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="modal-style.css">
+	<link rel="stylesheet" type="text/css" href="spesification.css">	
+</head>
+<body id="main">
+
+<!-- main -->
+	<div class="container-square">
+		<div class="img-background img-product">
+			<div class="flag flag-pos">
+				<span id="flag-text">BESTSELLER</span>
+			</div>
+		</div>
+		<div class"text-product">
+			<p class = "paragraph" id = "title-text">Bose SoundLink </br><span id="desc-text">Little speaker. Big goosebumps.</span></p>
+		</div>
+			<div class="table look-botton">
+				<div class="cell column" id="logo">
+					<img src="quicklook.svg">
+				</div>
+				<div class="cell column" id="price">
+					$199
+				</div>
+			</div>
+	</div>
+
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+	  <div class="modal-content">
+	  	<div class="table container-modals">
+		<div class="cell img-background img-modals">
+			<div class="flag flag-modals-pos">
+				<span id="flag-text">BESTSELLER</span>
+			</div>
+			<div class="spinner-modals">
+				<div class="dot"><div class="innerdot"></div></div>
+				<div class="dot"></div>
+				<div class="dot"></div>
+			</div>
+		</div>
+		<div class="cell desc-modals">
+			<p id="title-modal">Bose SoundLink </br><span id="price-modal">$199</span></p>
+			<p id="desc-modal">Wireless earphone for music lovers who live to be move.</p>
+
+			<div class="tab-modal">
+				<div class="tab">
+					<span class="tablinks active" id="tab-text" onclick="openTab(event, 'spesification')">Spesification</span>&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class="tablinks" id="tab-text" onclick="openTab(event, 'features')">Features</span>
+					<hr>
+				</div>
+				
+				<div id="spesification" class="tab-content active" style="display:block">
+					<div>
+						<ul class="check">
+							<li> Up to 8 hours playtime</li>
+							<li> Powerful sound</li>
+							<li> Wireless earphones</li>
+						</ul>
+					</div>
+					<div class="colors-modal">
+						<hr>
+						<span id="tab-text">Choose your colors</span>
+						</br>
+						<div>
+							<div class="checklist-dot">
+							</div>
+							<div class="dot  black-dot"></div>
+							<div class="dot yellow-dot"></div>
+						</div>
+					</div>
+				</div>
+
+				<div id="features" class="tab-content">
+					<div>
+						<ul class="check">
+							<li> Bumpers for bumping</li>
+							<li> All sound. No seam.</li>
+							<li> Grab and go</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+						
+			<div class="shipping-modal">
+				<hr>
+				<div>
+					<img src="check.svg">&nbsp;&nbsp;<p class="shipping">Free shipping & return + 2 year warranty</p>
+				</div>
+				<hr>
+			</div>
+			
+			<div class="cart-modal">
+				<div class="table cart-class">
+					<!-- belum fix -->
+					<div class="cell column" id="cart">
+						<img src="cart.svg">
+					</div>
+					<div class="cell column" id="buy">
+						BUY NOW
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+
+	</div>
+	<script src="index.js"></script>
+</body>
+</html>
